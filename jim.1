@@ -1,0 +1,54 @@
+.\"
+.\" Copyright (c) 2010 Wojciech A. Koszek <wkoszek@FreeBSD.org>
+.\" All rights reserved.
+.\"
+.\" Redistribution and use in source and binary forms, with or without
+.\" modification, are permitted provided that the following conditions
+.\" are met:
+.\" 1. Redistributions of source code must retain the above copyright
+.\"    notice, this list of conditions and the following disclaimer.
+.\" 2. Redistributions in binary form must reproduce the above copyright
+.\"    notice, this list of conditions and the following disclaimer in the
+.\"    documentation and/or other materials provided with the distribution.
+.\"
+.\" THIS SOFTWARE IS PROVIDED BY THE DEVELOPERS ``AS IS'' AND ANY EXPRESS OR
+.\" IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+.\" OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+.\" IN NO EVENT SHALL THE DEVELOPERS BE LIABLE FOR ANY DIRECT, INDIRECT,
+.\" INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+.\" NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+.\" DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+.\" THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+.\" (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+.\" THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+.\"
+.\" XXWK: After manual page is finished:
+.\" Please conform mdoc(7) standard.
+.\"
+.Dd February 1, 2010
+.Dt JIM 1
+.Os
+.Sh NAME
+Jim - a small footprint implementation of the Tcl programming language.
+.Sh DESCRIPTION
+Jim is a small footprint implementation of the Tcl programming language.
+It supports vest majority of the most important Tcl commands met in standard
+Tcl interpreters.
+.\" How was the original 85k measured? 168/312KB is no longer "that small"
+Jim is quite small: on x86, dynamic library with Jim's API measures 168KB,
+while staticly linked interpreter weights 312KB.
+It has been written from scratch in ANSI C, which makes it a good target
+for porting and embedding within other applications.
+In order to try out Jim, simplified "jimsh" interpreter has been provided.
+TODO.
+.Pp
+Jim has been tested in production use as well -- OpenOCD project based its
+configuration system on Jim interpreter.
+.Sh BUGS
+Keyword
+expr
+is known to have problems with handling || and && operators.
+.Sh AUTHORS
+Jim has been written by Salvatore Sanfilippo and other contributors.
+This manual page was written by
+.An Wojciech A. Koszek Aq wkoszek@FreeBSD.org .
