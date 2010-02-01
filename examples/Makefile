@@ -4,11 +4,13 @@ CFLAGS+= -ljim
 
 EXAMPLES=		\
 	jim_command	\
+	jim_conf	\
 	jim_hello	\
 	jim_inline	\
 	jim_list	\
 	jim_obj		\
-	jim_return
+	jim_return 	\
+	jim_variable
 
 all: libjim.so $(EXAMPLES)
 
