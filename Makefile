@@ -164,6 +164,9 @@ bak:
 	cp -f jimsh.c jimsh.c.orig
 	cp -f jim.h jim.h.orig
 
+showman:
+	@groff -Tascii -man jim.1
+
 # Dependences
 jim-aio.o:	jim-aio.c jim.h
 jim-posix.o:	jim-posix.c jim.h
