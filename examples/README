@@ -14,6 +14,11 @@ jim_command
 	Simple command implementation in Jim's API. Command is then executed
 	in a script encoded within a program.
 
+jim_conf
+	A bit bigger examples showing how can you implement custom
+	configuration file parser in Jim API. "net.tcl" is an example of
+	such file.
+
 jim_hello
 	Standard "Hello world!" program.
 
@@ -34,3 +39,7 @@ jim_obj
 jim_return
 	Similar to jim_command example, but implemented command actually
 	returns a value.
+
+jim_variable
+	This simple script tries to read a variable, that has been set
+	in Tcl script.
