@@ -78,9 +78,9 @@ mystate_new(void)
 	struct mystate *s;
 
 	s = calloc(1, sizeof(*s));
+	assert(s != NULL);
 	s->block_parsing = 0;
 	s->head = NULL;
-	assert(s != NULL);
 	return (s);
 }
 
