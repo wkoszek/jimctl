@@ -3,9 +3,9 @@
 This is a [JimTcl](http://jim.tcl.tk/index.html/doc/www/www/index.html)
 version from circa before 2010. I took it since the build was entirely
 `makefile` based and it was easy to port JimTcl back then. I made it work on
-3 platforms: FreeBSD, GNU/Linux and Windows.
-
-The original README is [here](README)
+3 platforms: FreeBSD, GNU/Linux and Windows. For the invonvenience of not
+having all bugs and features from 2010-... you get something that is easier
+to port. The original README is [here](README)
 
 This is a copy of my original repo on
 [http://repo.or.cz/jimtcl/wkoszek.git](http://repo.or.cz/jimtcl/wkoszek.git).
